@@ -33,7 +33,7 @@ prod2.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod2.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "2";
         tg.MainButton.show();
     }
@@ -42,7 +42,7 @@ prod3.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod3.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "3";
         tg.MainButton.show();
     }
@@ -51,7 +51,7 @@ prod4.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod4.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "4";
         tg.MainButton.show();
     }
@@ -60,7 +60,7 @@ prod5.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod5.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "5";
         tg.MainButton.show();
     }
@@ -69,7 +69,7 @@ prod6.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod6.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "6";
         tg.MainButton.show();
     }
@@ -78,7 +78,7 @@ prod7.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod7.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "7";
         tg.MainButton.show();
     }
@@ -87,7 +87,7 @@ prod8.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod8.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "8";
         tg.MainButton.show();
     }
@@ -96,7 +96,7 @@ prod9.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod9.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "9";
         tg.MainButton.show();
     }
@@ -105,7 +105,7 @@ prod10.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod10.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "10";
         tg.MainButton.show();
     }
@@ -114,7 +114,7 @@ prod11.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod11.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "11";
         tg.MainButton.show();
     }
@@ -123,7 +123,7 @@ prod12.addEventListener("click", () => {
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`${prod1.previousElementSibling.previousElementSibling.textContent.trim()}`);
+        tg.MainButton.setText(`${prod12.previousElementSibling.previousElementSibling.textContent.trim()}`);
         item = "12";
         tg.MainButton.show();
     }
