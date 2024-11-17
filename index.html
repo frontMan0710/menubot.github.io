@@ -3,13 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Sushi Vesla - Menu</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
 <div class="wrapper">
-    hi
+    <section class="catalogue contentBorder" id="catalogue">
+        <div class="catalogueList">
+            <div class="catalogueCard">
+                <img src="./img/catalogue4.png" width="181" height="180" alt="">
+                <span class="prodName">Нигири с тунцом опаленным</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом опаленным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod1" class="addToCart">
+                        <span class="prodPrice">36.80<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+                <div class="modalWrapper">
+                    <div class="modal lazy">
+                        <span class="mobileProdName">Нигири с тунцом опаленным</span>
+                        <img src="./img/modalPrev.png" width="480" height="480" alt="">
+                        <button type="button" class="close">
+                            <img src="./img/cross.svg" alt="">
+                        </button>
+                        <div class="cardDesc">
+                            <div class="modalContent">
+                                <span class="prodName">Нигири с тунцом опаленным</span>
+                                <p class="prodDesc">Тунец опаленный, стружка тунца, майонез, соус тайский сладкий чили, васаби 0,5 г</p>
+                                <span class="weight">Вес одной порции 38 г</span>
+                                <ul class="energyValue">
+                                    <span>Пищевая ценность на 100 г:</span>
+                                    <li><span>Энерг.ценность</span><span>164.10 ккал</span></li>
+                                    <li><span>Белки</span><span>10.80 г</span></li>
+                                    <li><span>Жиры</span><span>2.50 г</span></li>
+                                    <li><span>Углеводы</span><span>24.20 г</span></li>
+                                </ul>
+                            </div>
+                            <span class="mobileProdPrice">2.90 <span>грн за 1 шт</span></span>
+                            <button type="button" class="mobileAddCart">Добавить в корзину</button>
+                            <div class="itemChanges">
+                                <button type="button" class="decrease">−</button>
+                                <span class="counter" data-range="1">2</span>
+                                <button type="button" class="increase">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue3.png" width="181" height="180" alt="">
+                <span class="prodName">Спайси текка маки</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом опаленным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod2" class="addToCart">
+                        <span class="prodPrice">39.30<span class="prodDesc"> грн. за 1/2 порцию (4 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue2.png" width="181" height="180" alt="">
+                <span class="prodName">Корпоративный переполох на 22 человек</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Корпоративный переполох на 22 человек</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod3" class="addToCart">
+                        <span class="prodPrice">3233.00<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue1.png" width="181" height="180" alt="">
+                <span class="prodName">Нигири с тунцом маринованным</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом маринованным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod4" class="addToCart">
+                        <span class="prodPrice">36.80<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue4.png" width="181" height="180" alt="">
+                <span class="prodName">Нигири с тунцом опаленным</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом опаленным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod5" class="addToCart">
+                        <span class="prodPrice">36.80<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue3.png" width="181" height="180" alt="">
+                <span class="prodName">Спайси текка маки</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом опаленным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod6" class="addToCart">
+                        <span class="prodPrice">39.30<span class="prodDesc"> грн. за 1/2 порцию (4 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue2.png" width="181" height="180" alt="">
+                <span class="prodName">Корпоративный переполох на 22 человек</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Корпоративный переполох на 22 человек</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod7" class="addToCart">
+                        <span class="prodPrice">3233.00<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue1.png" width="181" height="180" alt="">
+                <span class="prodName">Нигири с тунцом маринованным</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом маринованным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod8" class="addToCart">
+                        <span class="prodPrice">36.80<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue4.png" width="181" height="180" alt="">
+                <span class="prodName">Нигири с тунцом опаленным</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом опаленным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod9" class="addToCart">
+                        <span class="prodPrice">36.80<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue3.png" width="181" height="180" alt="">
+                <span class="prodName">Спайси текка маки</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом опаленным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod10" class="addToCart">
+                        <span class="prodPrice">39.30<span class="prodDesc"> грн. за 1/2 порцию (4 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue2.png" width="181" height="180" alt="">
+                <span class="prodName">Корпоративный переполох на 22 человек</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Корпоративный переполох на 22 человек</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod11" class="addToCart">
+                        <span class="prodPrice">3233.00<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogueCard">
+                <img src="./img/catalogue1.png" width="181" height="180" alt="">
+                <span class="prodName">Нигири с тунцом маринованным</span>
+                <div class="mobileProdContent">
+                    <span class="prodNameMobile">Нигири с тунцом маринованным</span>
+                    <p class="prodDesc">
+                        Тунец опаленный, стружка тунца,
+                        майонез, соус тайский,
+                        сладкий чили, васаби 0,5 г
+                    </p>
+                    <button type="button" id="prod12" class="addToCart">
+                        <span class="prodPrice">36.80<span class="prodDesc"> грн. за порцию (1 шт)</span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
-<script src="./js/telegram-web-app.js"></script>
-<script src="./js/botAPI.js"></script>
+<script defer src="./vendor/jquery-3.7.1.min.js"></script>
+<script defer src="./vendor/jquery.lazy.min.js"></script>
+<script defer src="./js/telegram-web-app.js"></script>
+<script defer src="./js/buttons-dist.js"></script>
+<script defer src="./js/catalogue-dist.js"></script>
+<script defer src="./js/lazyload-dist.js"></script>
+<script defer src="./js/botAPI.js"></script>
 </body>
 </html>
