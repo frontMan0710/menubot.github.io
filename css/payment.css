@@ -1,0 +1,333 @@
+@media screen and (max-width: 719px) {
+  html, body {
+    scroll-behavior: smooth;
+    transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+  }
+  html > body, body > body {
+    width: 100%;
+    height: 100%;
+  }
+  html > body.lock, body > body.lock {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 719px) and (-webkit-min-device-pixel-ratio: 2) {
+  html > body.lock, body > body.lock {
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 719px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .wrapper .paymentTitle {
+    margin-top: 30px;
+  }
+  .wrapper .paymentTitle .titleContent h1 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .wrapper .payMethod .payContent {
+    background-color: rgb(248, 249, 252);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .wrapper .payMethod .payContent .payCashHead, .wrapper .payMethod .payContent .payCardHead, .wrapper .payMethod .payContent .payOnline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+  .wrapper .payMethod .payContent .payCashHead span, .wrapper .payMethod .payContent .payCardHead span, .wrapper .payMethod .payContent .payOnline span {
+    font-weight: 500;
+    font-size: clamp(12px, 1.94vw, 14px);
+  }
+  .wrapper .payMethod .payContent .payCashHead label, .wrapper .payMethod .payContent .payCardHead label, .wrapper .payMethod .payContent .payOnline label {
+    position: absolute;
+    right: 15px;
+    top: 0;
+  }
+  .wrapper .payMethod .payContent .payCashHead label input, .wrapper .payMethod .payContent .payCardHead label input, .wrapper .payMethod .payContent .payOnline label input {
+    position: absolute;
+    opacity: 0;
+  }
+  .wrapper .payMethod .payContent .payCashHead label input:checked ~ .checkmark, .wrapper .payMethod .payContent .payCardHead label input:checked ~ .checkmark, .wrapper .payMethod .payContent .payOnline label input:checked ~ .checkmark {
+    background-color: rgb(227, 30, 36);
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+  .wrapper .payMethod .payContent .payCashHead label input:focus ~ .targetInfo, .wrapper .payMethod .payContent .payCardHead label input:focus ~ .targetInfo, .wrapper .payMethod .payContent .payOnline label input:focus ~ .targetInfo {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .wrapper .payMethod .payContent .payCashHead label .checkmark, .wrapper .payMethod .payContent .payCardHead label .checkmark, .wrapper .payMethod .payContent .payOnline label .checkmark {
+    border: 2px rgb(227, 30, 36) solid;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+  .wrapper .payMethod .payContent .changeSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  .wrapper .payMethod .payContent .changeSelect #changeSum {
+    color: rgb(227, 30, 36);
+    border: 1px rgb(161, 164, 177) solid;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 4px;
+  }
+  .wrapper .payMethod .payContent .changeSelect #changeSum:focus {
+    border-color: rgb(227, 30, 36);
+    outline: none;
+  }
+  .wrapper .payMethod .payContent .changeSelect #changeSum::-webkit-input-placeholder {
+    color: rgb(161, 164, 177);
+  }
+  .wrapper .payMethod .payContent .changeSelect #changeSum::-moz-placeholder {
+    color: rgb(161, 164, 177);
+  }
+  .wrapper .payMethod .payContent .changeSelect #changeSum:-ms-input-placeholder {
+    color: rgb(161, 164, 177);
+  }
+  .wrapper .payMethod .payContent .changeSelect #changeSum::-ms-input-placeholder {
+    color: rgb(161, 164, 177);
+  }
+  .wrapper .payMethod .payContent .changeSelect #changeSum::placeholder {
+    color: rgb(161, 164, 177);
+  }
+  .wrapper .payMethod .payContent .changeSelect .changeShortSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .wrapper .payMethod .payContent .changeSelect .changeShortSelect label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 35px;
+  }
+  .wrapper .payMethod .payContent .changeSelect .changeShortSelect label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .wrapper .payMethod .payContent .changeSelect .changeShortSelect label input:checked ~ .checkButton {
+    color: rgb(227, 30, 36);
+    border-color: rgb(227, 30, 36);
+  }
+  .wrapper .payMethod .payContent .changeSelect .changeShortSelect label .checkButton {
+    border: 1px rgb(0, 0, 0) solid;
+    color: rgb(0, 0, 0);
+    -ms-flex-line-pack: center;
+        align-content: center;
+    white-space: nowrap;
+    font-weight: 500;
+    height: 35px;
+    width: auto;
+    font-size: clamp(12px, 1.94vw, 14px);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .wrapper .paymentConditions .conditionsContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  .wrapper .paymentConditions .conditionsContent label {
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+  .wrapper .paymentConditions .conditionsContent label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .wrapper .paymentConditions .conditionsContent label input:checked ~ .checkmark::after {
+    display: block;
+  }
+  .wrapper .paymentConditions .conditionsContent label .checkmark {
+    border: 2px rgb(227, 30, 36) solid;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+  }
+  .wrapper .paymentConditions .conditionsContent label .checkmark::after {
+    content: "";
+    border: solid rgb(227, 30, 36);
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 10px;
+    left: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .wrapper .paymentConditions .conditionsContent .conditions {
+    font-weight: 500;
+    width: 100%;
+    font-size: 14px;
+  }
+  .wrapper .paymentConditions .conditionsContent .conditions a {
+    color: rgb(227, 30, 36);
+  }
+  .wrapper .paymentConditions .conditionsContent a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .paymentConditions .conditionsContent a:focus ~ .conditionsInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .wrapper .paymentConditions .conditionsContent .conditionsInfo {
+    position: absolute;
+    font-weight: 500;
+    opacity: 0;
+    max-height: 209px;
+    width: clamp(200px, 41.72vw, 300px);
+    font-size: clamp(12px, 1.94vw, 14px);
+    padding: 10px;
+    right: -31px;
+    bottom: 16px;
+    border-radius: 4px;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(0, 0, 0) solid;
+    display: none;
+    right: -11px;
+    bottom: 45px;
+  }
+  .wrapper .paymentConditions .conditionsContent .conditionsInfo::after {
+    content: "";
+    background-color: inherit;
+    border-right: inherit;
+    border-bottom: inherit;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    bottom: -9px;
+    right: 15px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .wrapper .paymentConditions .conditionsContent .conditionsInfo p {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+  }
+  .wrapper .paymentConfirm {
+    padding: 20px 0 25px 0;
+  }
+  .wrapper .paymentConfirm .confirmContent button {
+    background-color: rgb(227, 30, 36);
+    color: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    -webkit-transition: 0.2s background-color, opacity;
+    transition: 0.2s background-color, opacity;
+    width: 100%;
+  }
+  .wrapper .paymentConfirm .confirmContent button:hover, .wrapper .paymentConfirm .confirmContent button:focus {
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(227, 30, 36) solid;
+    color: rgb(227, 30, 36);
+    -webkit-transition: 0.2s background-color;
+    transition: 0.2s background-color;
+  }
+  .wrapper .paymentConfirm .confirmContent button:hover.disable:hover, .wrapper .paymentConfirm .confirmContent button:hover.disable:focus, .wrapper .paymentConfirm .confirmContent button:focus.disable:hover, .wrapper .paymentConfirm .confirmContent button:focus.disable:focus {
+    background-color: rgb(227, 30, 36);
+    color: rgb(255, 255, 255);
+  }
+  .wrapper .paymentConfirm .confirmContent button.disable {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+}
+@media screen and (max-width: 719px) and (max-width: 719px) {
+  .wrapper .paymentConfirm .confirmContent button {
+    cursor: default;
+  }
+}
+@media screen and (max-width: 719px) {
+  .wrapper .paymentConfirm .confirmContent button .totalSum {
+    padding-left: 5px;
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+
+<div class="wrapper contentBorder">
+    <section class="cart">
+        <div class="contentBorder cartContent">
+            <div class="cartHeader">
+                <h1>Корзина</h1>
+                <div class="promoCode">
+                    <input type="text" placeholder="Введите промокод">
+                    <button type="submit">Применить</button>
+                </div>
+            </div>
+            <div class="cartList">
+                <div class="emptyMessage">
+                    <span>Ваша корзина пуста</span>
+                    <a href="index.html">Перейти в каталог</a>
+                </div>
+                <div class="cartItem">
+                    <div class="itemDesc">
+                        <span class="itemName">Сет "Только мне"</span>
+                        <ul class="itemComposition">
+                            <li>Сяке ясай маки 8 шт</li>
+                            <li>Тояма маки 8 шт</li>
+                            <li>Авокадо маки 8 шт</li>
+                        </ul>
+                    </div>
+                    <span class="itemPrice" data-price="104.60" data-currency="грн">209.20 грн.</span>
+                    <button type="button" class="removeItem">
+                        <img src="img/removeTrash.svg" width="26" height="26" alt="">
+                    </button>
+                    <div class="itemChanges">
+                        <button type="button" class="decrease">−</button>
+                        <span class="counter">2</span>
+                        <button type="button" class="increase">+</button>
+                    </div>
+                </div>
+                <div class="cartItem">
+                    <div class="itemDesc">
+                        <span class="itemName">Острый суп с жареным лососем</span>
+                        <ul class="itemComposition">
+                            <li>Жареный лосось</li>
+                            <li>яичная лапша</li>
+                            <li>зелёный лук</li>
+                            <li>острый соус</li>
+                        </ul>
+                    </div>
+                    <span class="itemPrice" data-price="35.50" data-currency="грн">71.00 грн.</span>
+                    <button type="button" class="removeItem">
+                        <img src="img/removeTrash.svg" width="26" height="26" alt="">
+                    </button>
+                    <div class="itemChanges">
+                        <button type="button" class="decrease">−</button>
+                        <span class="counter">2</span>
+                        <button type="button" class="increase">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="orderInfo">
+                <span>Минимальная сумма заказа для доставки: 190 грн.</span>
+                <span>Стоимость доставки: 50 грн.</span>
+                <span>При заказе от 800 грн. доставка - бесплатно</span>
+            </div>
+        </div>
+    </section>
+    <section class="sauces">
+        <div class="contentBorder saucesContent">
+            <div class="sectionTitle">
+                <h1>Соусы</h1>
+            </div>
+            <div class="saucesList">
+                <div class="sauceItem">
+                    <img src="img/sauce1.png" width="46" height="45" alt="">
+                    <span class="sauceName">Соевый соус</span>
+                    <span class="itemPrice" data-price="9.50" data-currency="грн">9.50 грн</span>
+                    <div class="itemChanges">
+                        <button type="button" class="decrease">−</button>
+                        <span class="counter">1</span>
+                        <button type="button" class="increase">+</button>
+                    </div>
+                </div>
+                <div class="sauceItem">
+                    <img src="img/sauce2.png" width="46" height="45" alt="">
+                    <span class="sauceName">Имбирь маринованный</span>
+                    <span class="itemPrice" data-price="11.40" data-currency="грн">11.40 грн</span>
+                    <div class="itemChanges">
+                        <button type="button" class="decrease">−</button>
+                        <span class="counter">1</span>
+                        <button type="button" class="increase">+</button>
+                    </div>
+                </div>
+                <div class="sauceItem">
+                    <img src="img/sauce3.png" width="46" height="45" alt="">
+                    <span class="sauceName">Васаби</span>
+                    <span class="itemPrice" data-price="12.70" data-currency="грн">12.70 грн</span>
+                    <div class="itemChanges">
+                        <button type="button" class="decrease">−</button>
+                        <span class="counter">1</span>
+                        <button type="button" class="increase">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="devices">
+        <div class="contentBorder devicesContent">
+            <div class="sectionTitle">
+                <h1>Приборы</h1>
+            </div>
+            <div class="deviceList">
+                <div class="deviceItem">
+                    <img src="img/device1.png" width="46" height="45" alt="">
+                    <span class="deviceName">Палочки для суши</span>
+                    <span class="itemPrice" data-price="9.50" data-currency="грн">9.50 грн</span>
+                    <div class="itemChanges">
+                        <button type="button" class="decrease">−</button>
+                        <span class="counter">1</span>
+                        <button type="button" class="increase">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="orderDelivery">
+        <div class="contentBorder deliveryContent">
+            <div class="sectionTitle">
+                <h1>Сумма заказа</h1>
+                <span class="totalSum">25.10 грн</span>
+            </div>
+            <div class="confirmButton">
+                <a href="./payment.html">Подтвердить заказ на <span class="totalSum" data-currency="грн"> 280.20 грн.</span></a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script defer src="./vendor/jquery-3.7.1.min.js"></script>
+<script defer src="./vendor/jquery.lazy.min.js"></script>
+<script defer src="./js/buttons-dist.js"></script>
+<script defer src="./js/lazyload-dist.js"></script>
+</body>
+</html>

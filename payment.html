@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/payment.css">
+</head>
+<body>
+<div class="wrapper contentBorder">
+    <section class="paymentTitle">
+        <div class="contentBorder titleContent">
+            <h1>Оплата</h1>
+        </div>
+    </section>
+    <section class="payMethod">
+        <div class="contentBorder payContent">
+            <div class="payCashHead radioLabel">
+                <span>Наличными</span>
+                <label for="cashMethod">
+                    <input type="radio" class="radioButton" name="paymentMethod" id="cashMethod" checked>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="changeSelect">
+                <input type="number" id="changeSum" placeholder="C какой суммы подготовить сдачу?">
+                <div class="changeShortSelect">
+                    <label>
+                        <input type="radio" name="changeSelect">
+                        <span class="checkButton">620 грн</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="changeSelect">
+                        <span class="checkButton">1240 грн</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="changeSelect">
+                        <span class="checkButton">Без сдачи</span>
+                    </label>
+                </div>
+            </div>
+            <div class="payCardHead radioLabel">
+                <span>Картой курьеру</span>
+                <label for="cardMethod">
+                    <input type="radio" class="radioButton" name="paymentMethod" id="cardMethod">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="payOnline radioLabel">
+                <span>Оплата онлайн</span>
+                <label for="onlineMethod">
+                    <input type="radio" class="radioButton" name="paymentMethod" id="onlineMethod">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section class="paymentConditions">
+        <div class="contentBorder conditionsContent">
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <span class="conditions">Я принимаю<a href="404.html"> условия оплаты и доставки</a></span>
+            <a href="javascript:void(0)"><img src="./img/infoIcon.svg" width="25" height="25" alt=""></a>
+            <div class="conditionsInfo"><p>Мы стремимся сделать процесс покупки максимально удобным и прозрачным для вас. Пожалуйста, ознакомьтесь с нашими условиями оплаты и доставки.</p></div>
+        </div>
+    </section>
+    <section class="paymentConfirm">
+        <div class="contentBorder confirmContent">
+            <div class="confirmButton">
+                <button type="submit">Подтвердить заказ на <span class="totalSum" data-currency="грн"> 280.20 грн.</span></button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script defer src="./vendor/jquery-3.7.1.min.js"></script>
+<script defer src="./vendor/jquery.lazy.min.js"></script>
+<script defer src="./js/lazyload-dist.js"></script>
+<script defer src="./js/radioButton-dist.js"></script>
+</body>
+</html>

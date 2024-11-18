@@ -1,0 +1,123 @@
+@media screen and (min-width: 320px) {
+  html, body {
+    scroll-behavior: smooth;
+    transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+  }
+  html > body, body > body {
+    width: 100%;
+    height: 100%;
+  }
+  html > body.lock, body > body.lock {
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  html > body.lock, body > body.lock {
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-y: hidden;
+  }
+}
+@media screen and (min-width: 320px) {
+  .contentWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    width: clamp(280px, 87.5vw, 425px);
+    top: 50%;
+    left: 50%;
+    margin: 30px 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .contentWrapper .title h1 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .contentWrapper .picture {
+    background-image: url(../img/404@2x.png);
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    width: clamp(280px, 87.5vw, 320px);
+    height: auto;
+    margin-top: 30px;
+  }
+  .contentWrapper .picture .errorCode {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    top: 35px;
+    font-size: 72px;
+  }
+  .contentWrapper .picture img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 33px;
+  }
+  .contentWrapper .info {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .contentWrapper .info p, .contentWrapper .info p ~ span {
+    font-weight: 600;
+    font-size: clamp(14px, 0.93vw, 18px);
+  }
+  .contentWrapper .info a {
+    background-color: rgb(227, 30, 36);
+    color: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    -webkit-transition: 0.2s background-color, opacity;
+    transition: 0.2s background-color, opacity;
+    margin-top: 15px;
+  }
+  .contentWrapper .info a:hover, .contentWrapper .info a:focus {
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(227, 30, 36) solid;
+    color: rgb(227, 30, 36);
+    -webkit-transition: 0.2s background-color;
+    transition: 0.2s background-color;
+  }
+  .contentWrapper .info a:hover.disable:hover, .contentWrapper .info a:hover.disable:focus, .contentWrapper .info a:focus.disable:hover, .contentWrapper .info a:focus.disable:focus {
+    background-color: rgb(227, 30, 36);
+    color: rgb(255, 255, 255);
+  }
+  .contentWrapper .info a.disable {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 719px) {
+  .contentWrapper .info a {
+    cursor: default;
+  }
+}

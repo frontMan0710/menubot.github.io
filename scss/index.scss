@@ -1,9 +1,50 @@
 @import "vars";
 @import "mixins";
+@include window;
 .wrapper {
   @include section;
   padding: 40px 0;
+  .promoCodeMobile {
+    @include promoCode;
+    position: relative;
+    font-size: $font-16-mobile;
+    button {
+      background-color: $color-red;
+      color: $color-white;
+      display: flex;
+      align-items: center;
+      width: max-content;
+      font-size: inherit;
+      padding: 0 15px;
+      border-radius: 5px;
+      &:hover {
+        @include hoverForRed;
+        &::after {
+          content: url("../img/searchHover.svg");
+          transition: background-color 0.3s;
+        }
+      }
+      &::after {
+        content: url("../img/searchWhite.svg");
+        transition: background-color 0.3s;
+        margin-left: 10px;
+        height: 16px;
+        width: 16px;
+      }
+    }
+    input {
+      color: $color-black;
+      font-size: inherit;
+      border-radius: 5px;
+      &::placeholder {
+        color: $color-dark;
+      }
+    }
+  }
   .catalogue {
+    .sectionTitle {
+      padding: 20px 0;
+    }
     .catalogueList {
       display: flex;
       flex-direction: column;
@@ -35,15 +76,29 @@
             width: clamp(140px, 27.81vw, 200px);
             font-size: 10px;
           }
-          .addToCart {
-            @include buttonAnc;
-            width: clamp(164px, 45.20vw, 325px);
-            font-size: $font-14-mobile;
-            padding: 0 15px;
-            span {
-              overflow: hidden;
-              white-space: nowrap;
-              text-overflow: ellipsis;
+          .cardOptions {
+            display: flex;
+            gap: 10px;
+            button {
+              @include buttonAnc;
+              padding: 0 15px;
+              &:first-child {
+                width: clamp(42px, 11.3vw, 81px);
+              }
+              &:last-child {
+                display: flex;
+                gap: 5px;
+                width: clamp(112px, 35vw, 160px);
+                font-size: $font-14-static;
+                span {
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+              }
+              img {
+                width: 20px;
+              }
             }
           }
         }
@@ -159,5 +214,8 @@
         }
       }
     }
+  }
+  a.openCart {
+    @include openCart;
   }
 }

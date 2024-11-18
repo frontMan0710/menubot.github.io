@@ -526,7 +526,8 @@
 @mixin openCart {
   @include roundIcon;
   box-shadow: 0 4px 50px 0 $color-darkred;
-  z-index: $ui3-layer;
+  //z-index: $ui3-layer;
+  z-index: $ui5-layer;
   position: fixed;
   cursor: default;
   width: 55px;
@@ -572,6 +573,7 @@
       @include hoverShadow;
       background-color: $color-white;
       border: 1px $color-dark-opacity solid;
+      cursor: pointer;
       width: clamp(120px, 7.18vw, 138px);
       height: 190px;
       padding: 19px;

@@ -1,0 +1,179 @@
+@import "mixins";
+@import "vars";
+@media #{$ui-mobile-interval} {
+  @include window;
+  .wrapper {
+    @include section;
+    padding: 40px 0;
+    .timeSet, .categories, .confirmation {
+      display: none;
+    }
+    .confirmTitle {
+      margin-top: 30px;
+      .titleContent {
+        h1 {
+          font-weight: 600;
+          font-size: $font-24-static;
+        }
+      }
+    }
+    .cart {
+      .cartContent {
+        background-color: var(--grey-light);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 10px;
+        padding: 15px;
+        .cartHeader {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          span {
+            font-weight: 500;
+            font-size: $font-18-static;
+          }
+        }
+        .cartList {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .emptyMessage {
+            @include emptyMessage;
+          }
+          .cartItem {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            height: max-content;
+            border-radius: 10px;
+            .itemDesc {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              font-weight: 600;
+              .itemName {
+                max-width: 195px;
+                font-size: $font-14-mobile;
+              }
+              .itemComposition {
+                font-size: $font-14-mobile;
+              }
+            }
+            .itemPrice {
+              white-space: nowrap;
+              font-weight: 600;
+              font-size: $font-14-mobile;
+            }
+            .removeItem, .itemChanges {
+              position: absolute;
+              bottom: 15px;
+            }
+            .removeItem {
+              background-color: inherit;
+              left: 15px;
+            }
+            .itemChanges {
+              @include itemChanges;
+              width: clamp(80px, 15.02vw, 108px);
+              right: 15px;
+            }
+          }
+        }
+        .orderInfo {
+          border-top: 2px var(--grey-dark) solid;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          gap: 15px;
+          font-weight: 600;
+          font-size: $font-16-static;
+          padding-top: 20px;
+          .orderSum {
+            font-size: $font-14-mobile;
+          }
+          .promoCode {
+            @include promoCode;
+            position: relative;
+            input {
+              font-size: $font-14-mobile;
+            }
+            button {
+              font-size: $font-14-mobile;
+              width: 108px;
+            }
+          }
+        }
+      }
+    }
+    .confirmContent {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .clientData {
+        padding: 0 15px;
+        @media (max-width: 360px) {
+          padding: 0;
+        }
+        .clientRow {
+          border-top: 2px var(--grey-dark) solid;
+          &:first-child {
+            border-top: none;
+          }
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 20px 0;
+          .deliveryHead, .pickupHead {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            span {
+              font-weight: 500;
+              font-size: $font-14-mobile;
+            }
+            label {
+              @include radioButton;
+              position: absolute;
+              top: 0;
+              right: 15px;
+            }
+          }
+          .editData {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        .clientRow, .deliveryRow, .pickupRow {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          position: relative;
+          span {
+            font-weight: 600;
+            font-size: $font-14-mobile;
+          }
+          .editData {
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+      .confirmButton {
+        display: flex;
+        a {
+          @include buttonAnc;
+          width: 100%;
+          .totalSum {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

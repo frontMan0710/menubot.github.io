@@ -1,0 +1,165 @@
+@import "mixins";
+@import "vars";
+@media screen and #{$ui-mobile} {
+  @include window;
+  .wrapper {
+    .cart {
+      .cartContent {
+        .cartHeader {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 15px;
+          height: 135px;
+          h1 {
+            font-weight: 600;
+            font-size: $font-24-static;
+          }
+          .promoCode {
+            @include promoCode;
+            position: relative;
+            button {
+              background-color: inherit;
+              font-size: $font-14-mobile;
+            }
+          }
+        }
+        .cartList {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          padding: 15px 0;
+          .emptyMessage {
+            @include emptyMessage;
+          }
+          .cartItem {
+            background-color: var(--grey-light);
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            min-height: 120px;
+            height: max-content;
+            border-radius: 10px;
+            padding: 15px 15px 60px 15px;
+            .itemDesc {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              font-weight: 600;
+              .itemName {
+                max-width: 195px;
+                font-size: clamp(18px, 3.05vw, 22px);
+              }
+              .itemComposition {
+                font-size: $font-14-mobile;
+              }
+            }
+            .itemPrice {
+              white-space: nowrap;
+              font-weight: 600;
+              font-size: $font-18-mobile;
+            }
+            .removeItem, .itemChanges {
+              position: absolute;
+              bottom: 15px;
+            }
+            .removeItem {
+              background-color: inherit;
+              left: 15px;
+            }
+            .itemChanges {
+              @include itemChanges;
+              width: clamp(80px, 15.02vw, 108px);
+              right: 15px;
+            }
+          }
+        }
+        .orderInfo {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          gap: 15px;
+          font-weight: 600;
+          font-size: $font-16-static;
+          padding-top: 15px;
+        }
+      }
+    }
+    .sauces, .devices {
+      margin-top: 30px;
+      .saucesContent, .devicesContent {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .sectionTitle {
+          h1 {
+            font-weight: 600;
+            font-size: 22px;
+          }
+        }
+        .saucesList, .deviceList {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .sauceItem, .deviceItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            width: 100%;
+            @media (max-width: 360px) {
+              gap: 8px;
+            }
+            .itemPrice, .sauceName, .deviceName {
+              font-size: $font-16-mobile;
+              &.sauceName, &.deviceName {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                hyphens: auto;
+                width: clamp(100px, 17.38vw, 125px);
+              }
+              &.itemPrice {
+                white-space: nowrap;
+              }
+            }
+            .itemChanges {
+              @include itemChanges;
+              width: clamp(80px, 15.02vw, 108px);
+            }
+          }
+        }
+      }
+    }
+    .orderDelivery {
+      background-color: var(--grey-light);
+      padding: 20px 0 25px 0;
+      margin-top: 30px;
+      .deliveryContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .sectionTitle, .deliveryButtons {
+          display: flex;
+          justify-content: space-between;
+        }
+        .sectionTitle {
+          h1, .totalSum {
+            font-weight: 600;
+            font-size: clamp(18px, 3.05vw, 22px);
+          }
+        }
+        .confirmButton {
+          a {
+            @include buttonAnc;
+            width: 100%;
+            .totalSum {
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
