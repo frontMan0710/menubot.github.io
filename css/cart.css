@@ -5,6 +5,7 @@
     -webkit-transition: height 0.3s;
   }
   html > body, body > body {
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
   }
@@ -305,6 +306,7 @@
   .wrapper .cart .cartContent .cartList .cartItem .itemChanges button.decrease, .wrapper .cart .cartContent .cartList .cartItem .itemChanges button.increase {
     background-color: rgb(227, 30, 36);
     color: rgb(255, 255, 255);
+    cursor: default;
     border: none;
     width: clamp(25px, 4.17vw, 30px);
     height: 40px;
@@ -441,6 +443,7 @@
   .wrapper .sauces .saucesContent .saucesList .sauceItem .itemChanges button.decrease, .wrapper .sauces .saucesContent .saucesList .sauceItem .itemChanges button.increase, .wrapper .sauces .saucesContent .saucesList .deviceItem .itemChanges button.decrease, .wrapper .sauces .saucesContent .saucesList .deviceItem .itemChanges button.increase, .wrapper .sauces .saucesContent .deviceList .sauceItem .itemChanges button.decrease, .wrapper .sauces .saucesContent .deviceList .sauceItem .itemChanges button.increase, .wrapper .sauces .saucesContent .deviceList .deviceItem .itemChanges button.decrease, .wrapper .sauces .saucesContent .deviceList .deviceItem .itemChanges button.increase, .wrapper .sauces .devicesContent .saucesList .sauceItem .itemChanges button.decrease, .wrapper .sauces .devicesContent .saucesList .sauceItem .itemChanges button.increase, .wrapper .sauces .devicesContent .saucesList .deviceItem .itemChanges button.decrease, .wrapper .sauces .devicesContent .saucesList .deviceItem .itemChanges button.increase, .wrapper .sauces .devicesContent .deviceList .sauceItem .itemChanges button.decrease, .wrapper .sauces .devicesContent .deviceList .sauceItem .itemChanges button.increase, .wrapper .sauces .devicesContent .deviceList .deviceItem .itemChanges button.decrease, .wrapper .sauces .devicesContent .deviceList .deviceItem .itemChanges button.increase, .wrapper .devices .saucesContent .saucesList .sauceItem .itemChanges button.decrease, .wrapper .devices .saucesContent .saucesList .sauceItem .itemChanges button.increase, .wrapper .devices .saucesContent .saucesList .deviceItem .itemChanges button.decrease, .wrapper .devices .saucesContent .saucesList .deviceItem .itemChanges button.increase, .wrapper .devices .saucesContent .deviceList .sauceItem .itemChanges button.decrease, .wrapper .devices .saucesContent .deviceList .sauceItem .itemChanges button.increase, .wrapper .devices .saucesContent .deviceList .deviceItem .itemChanges button.decrease, .wrapper .devices .saucesContent .deviceList .deviceItem .itemChanges button.increase, .wrapper .devices .devicesContent .saucesList .sauceItem .itemChanges button.decrease, .wrapper .devices .devicesContent .saucesList .sauceItem .itemChanges button.increase, .wrapper .devices .devicesContent .saucesList .deviceItem .itemChanges button.decrease, .wrapper .devices .devicesContent .saucesList .deviceItem .itemChanges button.increase, .wrapper .devices .devicesContent .deviceList .sauceItem .itemChanges button.decrease, .wrapper .devices .devicesContent .deviceList .sauceItem .itemChanges button.increase, .wrapper .devices .devicesContent .deviceList .deviceItem .itemChanges button.decrease, .wrapper .devices .devicesContent .deviceList .deviceItem .itemChanges button.increase {
     background-color: rgb(227, 30, 36);
     color: rgb(255, 255, 255);
+    cursor: default;
     border: none;
     width: clamp(25px, 4.17vw, 30px);
     height: 40px;
