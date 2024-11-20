@@ -305,17 +305,6 @@
     transition: 0.2s background-color, opacity;
     width: 100%;
   }
-  .wrapper .paymentConfirm .confirmContent button:hover, .wrapper .paymentConfirm .confirmContent button:focus {
-    background-color: rgb(255, 255, 255);
-    border: 1px rgb(227, 30, 36) solid;
-    color: rgb(227, 30, 36);
-    -webkit-transition: 0.2s background-color;
-    transition: 0.2s background-color;
-  }
-  .wrapper .paymentConfirm .confirmContent button:hover.disable:hover, .wrapper .paymentConfirm .confirmContent button:hover.disable:focus, .wrapper .paymentConfirm .confirmContent button:focus.disable:hover, .wrapper .paymentConfirm .confirmContent button:focus.disable:focus {
-    background-color: rgb(227, 30, 36);
-    color: rgb(255, 255, 255);
-  }
   .wrapper .paymentConfirm .confirmContent button.disable {
     opacity: 0.5;
     -webkit-transition: opacity 0.2s;
@@ -328,6 +317,17 @@
   }
 }
 @media screen and (max-width: 719px) {
+  .wrapper .paymentConfirm .confirmContent button:hover, .wrapper .paymentConfirm .confirmContent button:focus {
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(227, 30, 36) solid;
+    color: rgb(227, 30, 36);
+    -webkit-transition: 0.2s background-color;
+    transition: 0.2s background-color;
+  }
+  .wrapper .paymentConfirm .confirmContent button:hover.disable:hover, .wrapper .paymentConfirm .confirmContent button:hover.disable:focus, .wrapper .paymentConfirm .confirmContent button:focus.disable:hover, .wrapper .paymentConfirm .confirmContent button:focus.disable:focus {
+    background-color: rgb(227, 30, 36);
+    color: rgb(255, 255, 255);
+  }
   .wrapper .paymentConfirm .confirmContent button .totalSum {
     padding-left: 5px;
   }

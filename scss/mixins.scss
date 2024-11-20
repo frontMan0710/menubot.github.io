@@ -275,8 +275,7 @@
     }
   }
 }
-@mixin buttonAnc {
-  @include hoverForRed;
+@mixin buttonAnc ($useHover: true) {
   background-color: $color-red;
   color: $color-white;
   display: flex;
@@ -294,6 +293,9 @@
   }
   @media #{$ui-mobile} {
     cursor: default;
+  }
+  @if $useHover {
+    @include hoverForRed;
   }
 }
 @mixin catalogueCard {
@@ -382,7 +384,7 @@
     font-size: $font-16-static;
   }
   a {
-    @include buttonAnc;
+    @include buttonAnc(true);
     width: 100%;
   }
 }
@@ -770,7 +772,7 @@
         }
       }
       .checkout {
-        @include buttonAnc;
+        @include buttonAnc(true);
         width: 100%;
         height: 50px;
         font-size: $font-18-static;

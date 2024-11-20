@@ -120,17 +120,6 @@
     transition: 0.2s background-color, opacity;
     width: 100%;
   }
-  .wrapper .cart .cartContent .cartList .emptyMessage a:hover, .wrapper .cart .cartContent .cartList .emptyMessage a:focus {
-    background-color: rgb(255, 255, 255);
-    border: 1px rgb(227, 30, 36) solid;
-    color: rgb(227, 30, 36);
-    -webkit-transition: 0.2s background-color;
-    transition: 0.2s background-color;
-  }
-  .wrapper .cart .cartContent .cartList .emptyMessage a:hover.disable:hover, .wrapper .cart .cartContent .cartList .emptyMessage a:hover.disable:focus, .wrapper .cart .cartContent .cartList .emptyMessage a:focus.disable:hover, .wrapper .cart .cartContent .cartList .emptyMessage a:focus.disable:focus {
-    background-color: rgb(227, 30, 36);
-    color: rgb(255, 255, 255);
-  }
   .wrapper .cart .cartContent .cartList .emptyMessage a.disable {
     opacity: 0.5;
     -webkit-transition: opacity 0.2s;
@@ -143,6 +132,17 @@
   }
 }
 @media only screen and (max-width: 719px) and (min-width: 320px) {
+  .wrapper .cart .cartContent .cartList .emptyMessage a:hover, .wrapper .cart .cartContent .cartList .emptyMessage a:focus {
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(227, 30, 36) solid;
+    color: rgb(227, 30, 36);
+    -webkit-transition: 0.2s background-color;
+    transition: 0.2s background-color;
+  }
+  .wrapper .cart .cartContent .cartList .emptyMessage a:hover.disable:hover, .wrapper .cart .cartContent .cartList .emptyMessage a:hover.disable:focus, .wrapper .cart .cartContent .cartList .emptyMessage a:focus.disable:hover, .wrapper .cart .cartContent .cartList .emptyMessage a:focus.disable:focus {
+    background-color: rgb(227, 30, 36);
+    color: rgb(255, 255, 255);
+  }
   .wrapper .cart .cartContent .cartList .cartItem {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -525,17 +525,6 @@
     transition: 0.2s background-color, opacity;
     width: 100%;
   }
-  .wrapper .confirmContent .confirmButton a:hover, .wrapper .confirmContent .confirmButton a:focus {
-    background-color: rgb(255, 255, 255);
-    border: 1px rgb(227, 30, 36) solid;
-    color: rgb(227, 30, 36);
-    -webkit-transition: 0.2s background-color;
-    transition: 0.2s background-color;
-  }
-  .wrapper .confirmContent .confirmButton a:hover.disable:hover, .wrapper .confirmContent .confirmButton a:hover.disable:focus, .wrapper .confirmContent .confirmButton a:focus.disable:hover, .wrapper .confirmContent .confirmButton a:focus.disable:focus {
-    background-color: rgb(227, 30, 36);
-    color: rgb(255, 255, 255);
-  }
   .wrapper .confirmContent .confirmButton a.disable {
     opacity: 0.5;
     -webkit-transition: opacity 0.2s;
@@ -548,6 +537,17 @@
   }
 }
 @media only screen and (max-width: 719px) and (min-width: 320px) {
+  .wrapper .confirmContent .confirmButton a:hover, .wrapper .confirmContent .confirmButton a:focus {
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(227, 30, 36) solid;
+    color: rgb(227, 30, 36);
+    -webkit-transition: 0.2s background-color;
+    transition: 0.2s background-color;
+  }
+  .wrapper .confirmContent .confirmButton a:hover.disable:hover, .wrapper .confirmContent .confirmButton a:hover.disable:focus, .wrapper .confirmContent .confirmButton a:focus.disable:hover, .wrapper .confirmContent .confirmButton a:focus.disable:focus {
+    background-color: rgb(227, 30, 36);
+    color: rgb(255, 255, 255);
+  }
   .wrapper .confirmContent .confirmButton a .totalSum {
     padding-left: 5px;
   }

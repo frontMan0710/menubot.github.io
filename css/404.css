@@ -100,6 +100,18 @@
     transition: 0.2s background-color, opacity;
     margin-top: 15px;
   }
+  .contentWrapper .info a.disable {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 719px) {
+  .contentWrapper .info a {
+    cursor: default;
+  }
+}
+@media screen and (min-width: 320px) {
   .contentWrapper .info a:hover, .contentWrapper .info a:focus {
     background-color: rgb(255, 255, 255);
     border: 1px rgb(227, 30, 36) solid;
@@ -110,15 +122,5 @@
   .contentWrapper .info a:hover.disable:hover, .contentWrapper .info a:hover.disable:focus, .contentWrapper .info a:focus.disable:hover, .contentWrapper .info a:focus.disable:focus {
     background-color: rgb(227, 30, 36);
     color: rgb(255, 255, 255);
-  }
-  .contentWrapper .info a.disable {
-    opacity: 0.5;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 719px) {
-  .contentWrapper .info a {
-    cursor: default;
   }
 }

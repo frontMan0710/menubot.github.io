@@ -167,7 +167,7 @@
       .confirmButton {
         display: flex;
         a {
-          @include buttonAnc;
+          @include buttonAnc(true);
           width: 100%;
           .totalSum {
             padding-left: 5px;

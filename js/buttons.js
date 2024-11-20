@@ -15,6 +15,13 @@ $(function () {
         }
         requestAnimationFrame(updateNumber)
     }
+    function start() {
+        let counter = parseInt($(".counter").text(), 10)
+        if (counter < 1) {
+            $(".decrease").addClass("disable")
+        }
+    }
+    start()
     $(".decrease").on("click", function() {
         let $counter = $(this).siblings(".counter")
         let $price = $(this).closest(".cartItem, [class*='Item']").find(".itemPrice")

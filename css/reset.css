@@ -47,6 +47,11 @@ a {
     line-height: inherit;
     font-size: inherit;
 }
+@media screen and (max-width: 768px) {
+    button {
+        cursor: default;
+    }
+}
 :root {
     --normal: "Montserrat Normal", sans-serif;
     --medium: "Montserrat Medium", sans-serif;
