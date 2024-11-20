@@ -122,7 +122,7 @@
                 .increase, .decrease {
                   cursor: default;
                   &:hover {
-                    background-color: $color-white;
+                    background-color: transparent;
                     border: 1px $color-red solid;
                     color: $color-red;
                     transition: 0.2s background-color;
