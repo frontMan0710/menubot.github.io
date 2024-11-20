@@ -598,6 +598,7 @@
   }
   @media #{$ui-mobile} {
     height: 60px;
+    padding-right: 50px;
     &::before {
       content: "→";
       position: absolute;

@@ -21,7 +21,7 @@ $(function () {
         let $currency = $price.data("currency")
         let price = parseFloat($price.data("price"))
         let counter = parseInt($counter.text(), 10)
-        if (counter > 1) {
+        if (counter > 0) {
             counter--
             let itemTotal = (price * counter).toFixed(2)
             $counter.text(counter)

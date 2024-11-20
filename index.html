@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi Vesla - Menu</title>
+    <link rel="stylesheet" href="./vendor/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
 <div class="wrapper contentBorder">
+    <section class="categories swiper">
+        <ul class="categoryListMobile swiper-wrapper">
+            <li class="swiper-slide"><a href="./categorySelected.html">Ролы</a></li>
+            <li class="active swiper-slide"><a href="javascript:void(0)">Нигири</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Сеты</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Соусы. Гарниры</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Супы</a></li>
+        </ul>
+    </section>
     <section class="promoCodeMobile">
         <input type="text" placeholder="Введите название">
         <button>Поиск</button>
@@ -35,6 +45,11 @@
                             <img src="./img/cart.svg" alt="">
                             <span>36.80 грн</span>
                         </button>
+                        <div class="itemChanges">
+                            <button type="button" class="decrease">−</button>
+                            <span class="counter" data-range="1">0</span>
+                            <button type="button" class="increase">+</button>
+                        </div>
                     </div>
                 </div>
                 <div class="modalWrapper">
@@ -86,6 +101,11 @@
                             <img src="./img/cart.svg" alt="">
                             <span>39.20 грн</span>
                         </button>
+                        <div class="itemChanges">
+                            <button type="button" class="decrease">−</button>
+                            <span class="counter" data-range="1">0</span>
+                            <button type="button" class="increase">+</button>
+                        </div>
                     </div>
                 </div>
                 <div class="modalWrapper">
@@ -137,6 +157,11 @@
                             <img src="./img/cart.svg" alt="">
                             <span>3233.00 грн</span>
                         </button>
+                        <div class="itemChanges">
+                            <button type="button" class="decrease">−</button>
+                            <span class="counter" data-range="1">0</span>
+                            <button type="button" class="increase">+</button>
+                        </div>
                     </div>
                 </div>
                 <div class="modalWrapper">
@@ -187,6 +212,11 @@
                             <img src="./img/cart.svg" alt="">
                             <span>36.80 грн</span>
                         </button>
+                        <div class="itemChanges">
+                            <button type="button" class="decrease">−</button>
+                            <span class="counter" data-range="1">0</span>
+                            <button type="button" class="increase">+</button>
+                        </div>
                     </div>
                 </div>
                 <div class="modalWrapper">
@@ -237,6 +267,11 @@
                             <img src="./img/cart.svg" alt="">
                             <span>36.80 грн</span>
                         </button>
+                        <div class="itemChanges">
+                            <button type="button" class="decrease">−</button>
+                            <span class="counter" data-range="1">0</span>
+                            <button type="button" class="increase">+</button>
+                        </div>
                     </div>
                 </div>
                 <div class="modalWrapper">
@@ -288,6 +323,11 @@
                             <img src="./img/cart.svg" alt="">
                             <span>39.20 грн</span>
                         </button>
+                        <div class="itemChanges">
+                            <button type="button" class="decrease">−</button>
+                            <span class="counter" data-range="1">0</span>
+                            <button type="button" class="increase">+</button>
+                        </div>
                     </div>
                 </div>
                 <div class="modalWrapper">
@@ -339,6 +379,11 @@
                             <img src="./img/cart.svg" alt="">
                             <span>3233.00 грн</span>
                         </button>
+                        <div class="itemChanges">
+                            <button type="button" class="decrease">−</button>
+                            <span class="counter" data-range="1">0</span>
+                            <button type="button" class="increase">+</button>
+                        </div>
                     </div>
                 </div>
                 <div class="modalWrapper">
@@ -389,6 +434,11 @@
                             <img src="./img/cart.svg" alt="">
                             <span>36.80 грн</span>
                         </button>
+                        <div class="itemChanges">
+                            <button type="button" class="decrease">−</button>
+                            <span class="counter" data-range="1">0</span>
+                            <button type="button" class="increase">+</button>
+                        </div>
                     </div>
                 </div>
                 <div class="modalWrapper">
@@ -430,11 +480,13 @@
 </div>
 <script defer src="./vendor/jquery-3.7.1.min.js"></script>
 <script defer src="./vendor/jquery.lazy.min.js"></script>
+<script defer src="./vendor/unpkg.com_swiper@8.4.7_swiper-bundle.min.js"></script>
 <script defer src="./js/telegram-web-app.js"></script>
 <script defer src="./js/buttons-dist.js"></script>
 <script defer src="./js/catalogue-dist.js"></script>
 <script defer src="./js/cart-dist.js"></script>
 <script defer src="./js/modalfix.js"></script>
+<script defer src="./js/categorySlider.js"></script>
 <script defer src="./js/lazyload-dist.js"></script>
 <script defer src="./js/botAPI.js"></script>
 </body>
