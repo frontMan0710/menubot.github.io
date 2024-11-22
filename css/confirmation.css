@@ -116,14 +116,14 @@
     height: 40px;
     font-size: 16px;
     border-radius: 10px;
-    -webkit-transition: 0.2s background-color, opacity;
-    transition: 0.2s background-color, opacity;
+    -webkit-transition: background-color 0.2s, opacity 0.3s;
+    transition: background-color 0.2s, opacity 0.3s;
     width: 100%;
   }
   .wrapper .cart .cartContent .cartList .emptyMessage a.disable {
     opacity: 0.5;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
 }
 @media only screen and (max-width: 719px) and (min-width: 320px) and (max-width: 719px) {
@@ -222,8 +222,14 @@
     font-size: 18px;
     border-radius: 5px;
   }
+  .wrapper .cart .cartContent .cartList .cartItem .itemChanges button.decrease {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
   .wrapper .cart .cartContent .cartList .cartItem .itemChanges button.decrease.disable {
     opacity: 0.5;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
   .wrapper .cart .cartContent .cartList .cartItem .itemChanges button ~ .counter {
     font-size: clamp(16px, 2.78vw, 20px);
@@ -521,14 +527,14 @@
     height: 40px;
     font-size: 16px;
     border-radius: 10px;
-    -webkit-transition: 0.2s background-color, opacity;
-    transition: 0.2s background-color, opacity;
+    -webkit-transition: background-color 0.2s, opacity 0.3s;
+    transition: background-color 0.2s, opacity 0.3s;
     width: 100%;
   }
   .wrapper .confirmContent .confirmButton a.disable {
     opacity: 0.5;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
 }
 @media only screen and (max-width: 719px) and (min-width: 320px) and (max-width: 719px) {

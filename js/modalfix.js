@@ -58,12 +58,18 @@ $(function () {
         $modalCounter.text(modalCounter)
     })
     $(".modal .cardDesc .mobileAddCart").on("click", function () {
+        let $buy = $(this).closest(".cardDesc").closest(".modal").closest(".modalWrapper").siblings(".mobileProdContent").find(".cardOptions").find(".addToCart")
+        let $itemChanges = $(this).closest(".cardDesc").closest(".modal").closest(".modalWrapper").siblings(".mobileProdContent").find(".cardOptions").find(".itemChanges")
+        let $counter = $itemChanges.find(".counter")
         let $modalItemChanges = $(this).siblings(".itemChanges")
         let $modalCounter = $modalItemChanges.find(".counter")
         let $modalDecrease = $modalCounter.siblings(".decrease")
         let modalCounter = parseInt($modalCounter.text(), 10)
         modalCounter++
         $modalCounter.text(modalCounter)
+        $counter.text(modalCounter)
         $modalDecrease.removeClass("disable")
+        $counter.siblings(".decrease").removeClass("disable")
+        $buy.addClass("active")
     })
 })

@@ -301,14 +301,14 @@
     height: 40px;
     font-size: 16px;
     border-radius: 10px;
-    -webkit-transition: 0.2s background-color, opacity;
-    transition: 0.2s background-color, opacity;
+    -webkit-transition: background-color 0.2s, opacity 0.3s;
+    transition: background-color 0.2s, opacity 0.3s;
     width: 100%;
   }
   .wrapper .paymentConfirm .confirmContent button.disable {
     opacity: 0.5;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
 }
 @media screen and (max-width: 719px) and (max-width: 719px) {

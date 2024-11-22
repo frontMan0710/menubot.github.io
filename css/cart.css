@@ -204,14 +204,14 @@
     height: 40px;
     font-size: 16px;
     border-radius: 10px;
-    -webkit-transition: 0.2s background-color, opacity;
-    transition: 0.2s background-color, opacity;
+    -webkit-transition: background-color 0.2s, opacity 0.3s;
+    transition: background-color 0.2s, opacity 0.3s;
     width: 100%;
   }
   .wrapper .cart .cartContent .cartList .emptyMessage a.disable {
     opacity: 0.5;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
 }
 @media screen and (max-width: 719px) and (max-width: 719px) {
@@ -313,8 +313,14 @@
     font-size: 18px;
     border-radius: 5px;
   }
+  .wrapper .cart .cartContent .cartList .cartItem .itemChanges button.decrease {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
   .wrapper .cart .cartContent .cartList .cartItem .itemChanges button.decrease.disable {
     opacity: 0.5;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
   .wrapper .cart .cartContent .cartList .cartItem .itemChanges button ~ .counter {
     font-size: clamp(16px, 2.78vw, 20px);
@@ -450,8 +456,14 @@
     font-size: 18px;
     border-radius: 5px;
   }
+  .wrapper .sauces .saucesContent .saucesList .sauceItem .itemChanges button.decrease, .wrapper .sauces .saucesContent .saucesList .deviceItem .itemChanges button.decrease, .wrapper .sauces .saucesContent .deviceList .sauceItem .itemChanges button.decrease, .wrapper .sauces .saucesContent .deviceList .deviceItem .itemChanges button.decrease, .wrapper .sauces .devicesContent .saucesList .sauceItem .itemChanges button.decrease, .wrapper .sauces .devicesContent .saucesList .deviceItem .itemChanges button.decrease, .wrapper .sauces .devicesContent .deviceList .sauceItem .itemChanges button.decrease, .wrapper .sauces .devicesContent .deviceList .deviceItem .itemChanges button.decrease, .wrapper .devices .saucesContent .saucesList .sauceItem .itemChanges button.decrease, .wrapper .devices .saucesContent .saucesList .deviceItem .itemChanges button.decrease, .wrapper .devices .saucesContent .deviceList .sauceItem .itemChanges button.decrease, .wrapper .devices .saucesContent .deviceList .deviceItem .itemChanges button.decrease, .wrapper .devices .devicesContent .saucesList .sauceItem .itemChanges button.decrease, .wrapper .devices .devicesContent .saucesList .deviceItem .itemChanges button.decrease, .wrapper .devices .devicesContent .deviceList .sauceItem .itemChanges button.decrease, .wrapper .devices .devicesContent .deviceList .deviceItem .itemChanges button.decrease {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
   .wrapper .sauces .saucesContent .saucesList .sauceItem .itemChanges button.decrease.disable, .wrapper .sauces .saucesContent .saucesList .deviceItem .itemChanges button.decrease.disable, .wrapper .sauces .saucesContent .deviceList .sauceItem .itemChanges button.decrease.disable, .wrapper .sauces .saucesContent .deviceList .deviceItem .itemChanges button.decrease.disable, .wrapper .sauces .devicesContent .saucesList .sauceItem .itemChanges button.decrease.disable, .wrapper .sauces .devicesContent .saucesList .deviceItem .itemChanges button.decrease.disable, .wrapper .sauces .devicesContent .deviceList .sauceItem .itemChanges button.decrease.disable, .wrapper .sauces .devicesContent .deviceList .deviceItem .itemChanges button.decrease.disable, .wrapper .devices .saucesContent .saucesList .sauceItem .itemChanges button.decrease.disable, .wrapper .devices .saucesContent .saucesList .deviceItem .itemChanges button.decrease.disable, .wrapper .devices .saucesContent .deviceList .sauceItem .itemChanges button.decrease.disable, .wrapper .devices .saucesContent .deviceList .deviceItem .itemChanges button.decrease.disable, .wrapper .devices .devicesContent .saucesList .sauceItem .itemChanges button.decrease.disable, .wrapper .devices .devicesContent .saucesList .deviceItem .itemChanges button.decrease.disable, .wrapper .devices .devicesContent .deviceList .sauceItem .itemChanges button.decrease.disable, .wrapper .devices .devicesContent .deviceList .deviceItem .itemChanges button.decrease.disable {
     opacity: 0.5;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
   .wrapper .sauces .saucesContent .saucesList .sauceItem .itemChanges button ~ .counter, .wrapper .sauces .saucesContent .saucesList .deviceItem .itemChanges button ~ .counter, .wrapper .sauces .saucesContent .deviceList .sauceItem .itemChanges button ~ .counter, .wrapper .sauces .saucesContent .deviceList .deviceItem .itemChanges button ~ .counter, .wrapper .sauces .devicesContent .saucesList .sauceItem .itemChanges button ~ .counter, .wrapper .sauces .devicesContent .saucesList .deviceItem .itemChanges button ~ .counter, .wrapper .sauces .devicesContent .deviceList .sauceItem .itemChanges button ~ .counter, .wrapper .sauces .devicesContent .deviceList .deviceItem .itemChanges button ~ .counter, .wrapper .devices .saucesContent .saucesList .sauceItem .itemChanges button ~ .counter, .wrapper .devices .saucesContent .saucesList .deviceItem .itemChanges button ~ .counter, .wrapper .devices .saucesContent .deviceList .sauceItem .itemChanges button ~ .counter, .wrapper .devices .saucesContent .deviceList .deviceItem .itemChanges button ~ .counter, .wrapper .devices .devicesContent .saucesList .sauceItem .itemChanges button ~ .counter, .wrapper .devices .devicesContent .saucesList .deviceItem .itemChanges button ~ .counter, .wrapper .devices .devicesContent .deviceList .sauceItem .itemChanges button ~ .counter, .wrapper .devices .devicesContent .deviceList .deviceItem .itemChanges button ~ .counter {
     font-size: clamp(16px, 2.78vw, 20px);
@@ -523,14 +535,14 @@
     height: 40px;
     font-size: 16px;
     border-radius: 10px;
-    -webkit-transition: 0.2s background-color, opacity;
-    transition: 0.2s background-color, opacity;
+    -webkit-transition: background-color 0.2s, opacity 0.3s;
+    transition: background-color 0.2s, opacity 0.3s;
     width: 100%;
   }
   .wrapper .orderDelivery .deliveryContent .confirmButton a.disable {
     opacity: 0.5;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
 }
 @media screen and (max-width: 719px) and (max-width: 719px) {
