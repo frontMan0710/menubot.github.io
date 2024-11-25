@@ -12,9 +12,20 @@
           gap: 15px;
           height: 135px;
           h1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             font-weight: 600;
             font-size: $font-24-static;
+            a.back {
+              display: flex;
+              cursor: pointer;
+              @media #{$ui-mobile} {
+                cursor: default;
+              }
+            }
           }
+
           .promoCode {
             @include promoCode;
             position: relative;

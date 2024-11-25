@@ -1,15 +1,14 @@
 $(function () {
+    let $openCart = $(".openCart")
     if ($(window).width() < 1120) {
-        let $element = $(".openCart").fadeOut(0)
+        $openCart.fadeOut(0)
         $(window).on("scroll", function() {
-            if (!$element.is(":visible")) {
-                $element.fadeIn(500)
+            if (!$openCart.is(":visible")) {
+                $openCart.fadeIn(500)
                 $(window).off("scroll")
             }
         })
     }
-})
-$(function () {
     $(".lazy").Lazy({
         bind: "event",
         threshold: 0,

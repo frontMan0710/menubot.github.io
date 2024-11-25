@@ -9,6 +9,7 @@ $(function () {
         let $modalCounter = $modal.find(".counter")
         let $modalDecrease = $modal.find(".decrease")
         let $modalIncrease = $modal.find(".increase")
+        let $openCart = $(".openCart")
 
         $buy.on("click", function () {
             $(this).addClass("active")
@@ -16,6 +17,7 @@ $(function () {
             sync($counter, $modalCounter)
             $decrease.removeClass("disable")
             $modalDecrease.removeClass("disable")
+            $openCart.fadeIn(500)
         })
         $modalBuy.on("click", function () {
             increase($modalCounter)
@@ -23,6 +25,7 @@ $(function () {
             $decrease.removeClass("disable")
             $modalDecrease.removeClass("disable")
             $buy.addClass("active")
+            $openCart.fadeIn(500)
         })
         $decrease.on("click", function () {
             decrease($counter)

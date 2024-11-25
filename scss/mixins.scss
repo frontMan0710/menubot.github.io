@@ -539,7 +539,7 @@
   width: 55px;
   height: 55px;
   right: 15px;
-  bottom: calc(50vh - (55px / 2));
+  bottom: calc(64vh - (55px / 2));
   transition: bottom 0.3s, top 0.3s;
 }
 @mixin inputField {
