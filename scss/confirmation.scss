@@ -5,9 +5,6 @@
   .wrapper {
     @include section;
     padding: 40px 0;
-    .timeSet, .categories, .confirmation {
-      display: none;
-    }
     .confirmTitle {
       margin-top: 30px;
       .titleContent {
@@ -142,31 +139,37 @@
               right: 15px;
             }
           }
-          .editData {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-          }
         }
         .clientRow, .deliveryRow, .pickupRow {
           display: flex;
           flex-direction: column;
           gap: 10px;
           position: relative;
-          span {
+          label {
             font-weight: 600;
             font-size: $font-14-mobile;
           }
-          .editData {
-            position: absolute;
-            right: 0;
+          .input-group {
+            display: flex;
+            justify-content: space-between;
+            input {
+              @include inputField;
+              width: calc(100% - 40px);
+              height: 28px;
+              &:focus {
+                border: 1px $color-red solid;
+                &::placeholder {
+                  opacity: 0.5;
+                  transition: 0.1s opacity;
+                }
+              }
+            }
           }
         }
       }
       .confirmButton {
         display: flex;
-        a {
+        button {
           @include buttonAnc(true);
           width: 100%;
           .totalSum {

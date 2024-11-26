@@ -20,12 +20,13 @@
             a.back {
               display: flex;
               cursor: pointer;
+              width: 26px;
+              height: 26px;
               @media #{$ui-mobile} {
                 cursor: default;
               }
             }
           }
-
           .promoCode {
             @include promoCode;
             position: relative;
